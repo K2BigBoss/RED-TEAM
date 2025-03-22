@@ -9,9 +9,9 @@ PFX faylni tekshirish.
    A. Shaxsiy kalitni chiqarish:
     - **# openssl pkcs12 -in fayl.pfx -nocerts -out fayl.key-enc**
     - Enter Import Password:(hash orqali aniqlangan parol (Brute force paroli))  Enter PEM pass phrase(Shaxsiy kalit uchun yangi parol kiritish): Verifying - Enter PEM pass phrase(qayta kiritish):
-  B. Sertifikatni chiqarish:   
-    - **# openssl pkcs12 -in fayl.pfx -clcerts -nokeys -out fayl.crt**   
-  C. Shaxsiy Kalitni shifrdan yechish (Decrypt):
+   B. Sertifikatni chiqarish:   
+    - **# openssl pkcs12 -in fayl.pfx -clcerts -nokeys -out fayl.crt**
+   C. Shaxsiy Kalitni shifrdan yechish (Decrypt):
     - **# openssl rsa -in fayl.key-enc -out fayl.key**
     - yuqorida kiritilgan yangi parol kiritiladi.
 4. evil-winrm orqali tizimga ulanish. (evil-winrm — bu Windows Remote Management (WinRM) protokoliga asoslangan vosita bo'lib, Windows tizimlariga masofaviy ulanish uchun ishlatiladi.)
