@@ -27,7 +27,7 @@ Asosiy parametrlar:
 https://www.hackingarticles.in/timelapse-hackthebox-walkthrough/
 
 
-**PFX fayl yaratish**
+**PFX fayl yaratish (Namuna)**
 1. OpenSSL o'rnatilganligini tekshirish
  - **# openssl version**
  - Agar o'rnatilmagan bo'lsa (**# sudo apt update && sudo apt install openssl**)
