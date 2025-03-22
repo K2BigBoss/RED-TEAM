@@ -1,4 +1,4 @@
-**PFX fayl parolini aniqlash?**
+**PFX fayl parolini aniqlash?**  
 PFX faylni tekshirish.
  - **# openssl pkcs12 -info -in mycertificate.pfx**   
 1. Hash yaratish.
@@ -17,7 +17,7 @@ PFX faylni tekshirish.
 4. evil-winrm orqali tizimga ulanish. (evil-winrm — bu Windows Remote Management (WinRM) protokoliga asoslangan vosita bo'lib, Windows tizimlariga masofaviy ulanish uchun ishlatiladi.)
  - **# evil-winrm -i <IP> -k fayl.key -c fayl.crt -S -r timelapse**    
 
-Asosiy parametrlar:
+Asosiy parametrlar:   
 **-i <IP>** – Masofaviy Windows mashinasining IP manzili. (Masalan: 10.10.10.10)  
 **-k fayl.key** – Shaxsiy kalit (Private Key) fayli. Bu kalit .pfx fayldan ajratib olingan bo'lishi kerak.  
 **-c fayl.crt** – Sertifikat (Certificate) fayli. Bu ham .pfx fayldan chiqarib olingan.  
