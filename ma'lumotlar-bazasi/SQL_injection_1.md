@@ -25,4 +25,9 @@ Biz nav.php deb nomlangan sahifani topdik, u veb-sayt uchun navigatsiya sahifasi
 
 ![image](https://github.com/user-attachments/assets/147b17e4-5788-460e-998c-ab1b2a9e05ed)   
 
+Hisob yaratish sahifasini biroz tekshirgandan so'ng, biz barcha sahifalar kirishdan himoyalangan va foydalanuvchi tizimga kirishi kerak degan xulosaga keldik. Shunday qilib, biz kirish nazoratini chetlab o'tish uchun HTTP javobini buzishga harakat qildik. Buning uchun biz burpda so'rovni oldik.   
+![image](https://github.com/user-attachments/assets/8e185ba7-db89-4018-af79-85313cb04699)   
+
+
+
 
