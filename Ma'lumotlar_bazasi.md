@@ -71,4 +71,15 @@ hydra -l admin -P passwords.txt 192.168.1.10 http-post-form "/login:username=^US
 ```
 http://testasp.vulnweb.com/Login.asp?RetURL=%2FDefault%2Easp%3F
 hydra -l admin -P /usr/share/wordlists/rockyou.txt testasp.vulnweb.com http-post-form "/Login.asp?RetURL=%2FDefault%2Easp%3F:tfUName=^USER^&tfUPass=^PASS^:S=logout" -vV -f
+```   
+
+5. Veb ilovani aniqlash va tekshirish.
 ```
+sudo apt install whatweb
+whatweb -v -a 3 192.168.0.102
+```
+Natijasi `http://192.168.1.10 [200 OK] WordPress, PHP 8.0.27, Apache 2.4.54`   
+
+6. Yashirin sahifalar va kataloglarni aniqlash.
+
+7. 
