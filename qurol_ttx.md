@@ -159,5 +159,15 @@ PKM (Пулемёт Калашникова Модернизированный) �
  - **Umumiy uzunligi:** 1192 mm
 
 
+**Glock 19X quyidagi texnik xususiyatlarga ega:**  
+ - **Kalibr:** 9mm
+ - **Sig'im:** 17 patronli magasin (standart), kengaytirilgan magazinlar ham mavjud
+ - **Lulaga uzunlik:** 4.02 dyuym (102 mm)
+ - **Umumiy uzunlik:** 7.44 dyuym (189 mm)
+ - **Balandlik:** 5.47 dyuym (139 mm)
+ - **Kenglik:** 1.30 dyuym (33 mm)
+ - **Og'irlik (bo'sh):** 24.83 oz (703 g)
+ - **Harakat:** Yarim avtomatik, zarbadan ishlovchi
+
 ![image](https://github.com/user-attachments/assets/a96dae71-3d5f-4b01-a0ad-cc19f181a31f)
 ![image](https://github.com/user-attachments/assets/b1452a24-f43e-444d-8982-40abc997c5a1)
