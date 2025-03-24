@@ -86,10 +86,10 @@ ffuf -u http://target.com/FUZZ -w /usr/share/wordlists/dirb/common.txt -H "User-
 ```
 ffuf -u "http://target.com/index.php?FUZZ=1" -w /usr/share/wordlists/parameters.txt
 ```   
-http://target.com/index.php?user=1
-http://target.com/index.php?admin=1
-http://target.com/index.php?debug=1
-http://target.com/index.php?test=1    
+http://target.com/index.php?user=1  
+http://target.com/index.php?admin=1  
+http://target.com/index.php?debug=1  
+http://target.com/index.php?test=1      
 
 **5. Subdomain fuzzing (yashirin subdomainlarni qidirish).** (Bu buyruq yashirin subdomainlarni (masalan, admin.target.com) topishga yordam beradi.)    
 ```
